@@ -29,9 +29,6 @@ def get_fruityvice_data(this_fruit_choice):
   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   return fruityvice_normalized
 
-#don't continue to run
-streamlit.stop()
-
 #new section to diplay fruityvice api response
 streamlit.header("Fruityvice Fruit Advice!")
 try:
